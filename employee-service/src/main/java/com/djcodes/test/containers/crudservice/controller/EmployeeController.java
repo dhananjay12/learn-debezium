@@ -64,6 +64,7 @@ public class EmployeeController {
     public ResponseEntity<?> delete(@PathVariable int id) {
         Optional<EmployeeEntity> result = employeeRepository.findById(id);
         if (result.isPresent()) {
+            employeeRepository.deleteById(id);
             return ResponseEntity.ok().build();
         }
 

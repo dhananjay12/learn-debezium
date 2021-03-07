@@ -35,9 +35,9 @@ spring:
 spring:
   profiles: mysql
   datasource:
-    url: jdbc:mysql://localhost:3306/poc?useUnicode=yes&characterEncoding=UTF-8&serverTimezone=UTC
-    username: root
-    password: debezium
+    url: jdbc:mysql://localhost:3306/employee_app?useUnicode=yes&characterEncoding=UTF-8&serverTimezone=UTC
+    username: backend
+    password: password
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQLInnoDBDialect
